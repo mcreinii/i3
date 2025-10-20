@@ -1,0 +1,23 @@
+# ~/.Xresources
+
+! Purple-themed color scheme
+*.background: #2E0032  
+*.foreground: #D0A8FF 
+
+*.color0:  #300032 
+*.color1:  #9B4B97
+*.color2:  #D88BE8
+*.color3:  #D078D4
+*.color4:  #7C2A72
+*.color5:  #B185D3
+*.color6:  #A06D9B
+*.color7:  #D9A1FF
+*.color8:  #3B0055
+*.color9:  #9B4B97
+*.color10: #D88BE8
+*.color11: #D078D4
+*.color12: #7C2A72
+*.color13: #B185D3
+*.color14: #A06D9B
+*.color15: #D9A1FF
+
