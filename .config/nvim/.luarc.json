@@ -1,6 +1,0 @@
-{
-  "format.enable": false,
-    "diagnostics.globals": [
-        "setup_commands"
-    ]
-}
