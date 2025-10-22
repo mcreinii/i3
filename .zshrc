@@ -5,6 +5,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+asciify -w 30 $HOME/.settings/ascii.png $HOME/.settings/ascii.txt > /dev/null 2>&1
+asciify -w 30 $HOME/.settings/ascii.jpg $HOME/.settings/ascii.txt > /dev/null 2>&1
+
+if [ -e "$HOME/.settings/ascii.txt" ]; then
+  cat "$HOME/.settings/ascii.txt"
+  echo "\n\nAscii art."
+fi
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
