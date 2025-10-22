@@ -1,16 +1,9 @@
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-asciify -w 30 $HOME/.settings/ascii.png $HOME/.settings/ascii.txt > /dev/null 2>&1
-asciify -w 30 $HOME/.settings/ascii.jpg $HOME/.settings/ascii.txt > /dev/null 2>&1
-
-if [ -e "$HOME/.settings/ascii.txt" ]; then
-  cat "$HOME/.settings/ascii.txt"
-  echo "\n\nAscii art."
 fi
 
 # Lines configured by zsh-newuser-install
@@ -35,3 +28,12 @@ export NVM_DIR="$HOME/.nvm"
 
 # Created by `pipx` on 2025-10-20 10:53:18
 export PATH="$PATH:/home/mcreinii/.local/bin"
+
+asciify -w 30 $HOME/.settings/ascii.png $HOME/.settings/ascii.txt > /dev/null 2>&1
+asciify -w 30 $HOME/.settings/ascii.jpg $HOME/.settings/ascii.txt > /dev/null 2>&1
+
+if [ -e "$HOME/.settings/ascii.txt" ]; then
+  cat "$HOME/.settings/ascii.txt"
+  echo "\n\nAscii art."
+fi
+
