@@ -1,4 +1,13 @@
+# Ignore configuration directories in the .config directory
 .config/nvim/
-.config/go/
-.config/yay/
+.config/ghostty/
 .config/wal/
+.config/nitrogren/
+.config/go/
+.config/dunst/
+.config/yay/
+
+# Optional: Ignore some specific file types in these directories
+.config/nvim/*.swp
+.config/ghostty/*.bak
+

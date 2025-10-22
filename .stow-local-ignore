@@ -1,0 +1,9 @@
+.git
+.gitignore
+
+.config/ghostty
+.config/wal
+.config/nitrogren
+.config/ghostty
+.config/go
+.config/dunst
