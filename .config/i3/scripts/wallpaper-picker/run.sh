@@ -7,4 +7,7 @@ choice=$(ls "$WALLPAPER_DIR" | dmenu -i -p "Pick a wallpaper")
 if [ -n "$choice" ]; then
   nitrogen --set-zoom-fill "$WALLPAPER_DIR/$choice" --save
   wal -i "$WALLPAPER_DIR/$choice"
+
+  rm $HOME/.Xresources
+  cp $HOME/.cache/wal/colors.Xresources $HOME/.Xresources
 fi
