@@ -1,9 +1,21 @@
+# Ignore version control
 .git
 .gitignore
 
-.config/ghostty
-.config/wal
-.config/nitrogren
-.config/ghostty
-.config/go
-.config/dunst
+# Ignore system/editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*.tmp
+*~
+
+# Ignore stow-related files
+.stow-local-ignore
+stow.sh
+unstow.sh
+
+# Ignore README and meta files
+README*
+LICENSE*
+
