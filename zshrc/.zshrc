@@ -5,9 +5,17 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+#
 
-# Aliases
-alias nvim="export NVIM_APPNAME=nvim && nvim"
+# Functions
+set_nvim () {
+  echo "Your nvim config name: "
+  read nvim_config
+  export NVIM_APPNAME=$nvim_config
+}
+
+# Aliases 
+alias vim=nvim
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -39,4 +47,3 @@ if [ -e "$HOME/.settings/ascii.txt" ]; then
   cat "$HOME/.settings/ascii.txt"
   echo "\n\nAscii art."
 fi
-
