@@ -1,3 +1,3 @@
 [time]
-command=echo "$(date +"%b %H:%M:%S (%A)")"
+command=echo "$(date +"%b %I:%M:%S (%A)")"
 interval=1
