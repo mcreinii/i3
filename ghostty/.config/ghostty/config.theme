@@ -22,12 +22,3 @@ palette = 12=#EBC5B9
 palette = 13=#CBC9CB
 palette = 14=#E7D5D1
 palette = 15=#c4c3c5
-font-family = "Caskaydia Mono Nerd Font"
-font-size = 12
-
-mouse-hide-while-typing = true
-background-opacity = 0.9
-background-blur = 8
-
-title = " "
-window-decoration = false
