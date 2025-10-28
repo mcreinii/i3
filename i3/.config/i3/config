@@ -70,6 +70,9 @@ bindsym $mod+Ctrl+w exec --no-startup-id sh $HOME/.config/i3/scripts/wallpaper-p
 # Open wallpapers
 bindsym $mod+Ctrl+t exec --no-startup-id sh $HOME/.config/i3/scripts/terminal-picker/run.sh
 
+# flameshot
+bindsym $mod+Shift+s exec flameshot full -c -p $HOME/screenshots
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
