@@ -11,7 +11,9 @@ ghostty_config() {
 }
 
 if [ -n "$choice" ]; then
-  nitrogen --set-zoom-fill "$WALLPAPER_DIR/$choice" --save
+  echo "$choice" > $HOME/.cache/wallpaper
+  nitrogen --set-zoom-fill "$WALLPAPER_DIR/$choice" --save || feh --bg-fill "$WALLPAPER_DIR/$choice"
+
 
   # Try wal backend first
   if ! wal -i "$WALLPAPER_DIR/$choice" --backend wal; then
