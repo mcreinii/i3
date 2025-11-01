@@ -47,3 +47,5 @@ if [ -e "$HOME/.settings/ascii.txt" ]; then
   cat "$HOME/.settings/ascii.txt"
   echo "\n\nAscii art."
 fi
+
+eval "$(zoxide init zsh)"
