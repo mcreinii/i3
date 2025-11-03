@@ -37,10 +37,10 @@ export NVM_DIR="$HOME/.nvm"
 # Created by `pipx` on 2025-10-20 10:53:18
 export PATH="$PATH:/home/mcreinii/.local/bin"
 
-asciify -w 30 $HOME/.settings/ascii.* $HOME/.settings/ascii.txt > /dev/null 2>&1
+asciify $HOME/.settings/ascii.* > /dev/null 2>&1
 
-if [ -e "$HOME/.settings/ascii.txt" ]; then
-  cat "$HOME/.settings/ascii.txt"
+if [ -e "$HOME/.settings/ascii.png.txt" ]; then
+  cat "$HOME/.settings/ascii.png.txt"
 fi
 
 eval "$(zoxide init zsh)"
